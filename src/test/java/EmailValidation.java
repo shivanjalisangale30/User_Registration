@@ -10,13 +10,13 @@ import java.util.Collection;
 @RunWith(Parameterized.class)
 public class EmailValidation
 {
-    private String string;
+    private String emailId;
     private boolean expectedValue;
     private UserRegistrationValidator userRegistration;
 
     public EmailValidation(String string, boolean expectedValue, UserRegistrationValidator userRegistration)
     {
-        this.string = string;
+        this.emailId = emailId;
         this.expectedValue = expectedValue;
     }
 
@@ -54,7 +54,7 @@ public class EmailValidation
     @Test
     public void testEmailValidation()
     {
-      Boolean result = userRegistration.validateEmailId(this.string);
+      Boolean result = userRegistration.validateEmailId(this.emailId);
       Assert.assertEquals(this.expectedValue,result);
     }
 }
