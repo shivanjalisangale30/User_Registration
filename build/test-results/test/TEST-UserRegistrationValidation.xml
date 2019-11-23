@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="UserRegistrationValidation" tests="12" skipped="0" failures="0" errors="0" timestamp="2019-11-23T04:42:22" hostname="admin" time="0.008">
+  <properties/>
+  <testcase name="lastNameValidation_whenInputLessThanThree_shouldReturnFalse" classname="UserRegistrationValidation" time="0.001"/>
+  <testcase name="firstNameValidation_whenFirstLetterNotUpperCase_shouldReturnFalse" classname="UserRegistrationValidation" time="0.0"/>
+  <testcase name="firstNameValidation_whenInputOnlyLowerCase_shouldReturnFalse" classname="UserRegistrationValidation" time="0.001"/>
+  <testcase name="lastNameValidation_whenInputIsCorrect_shouldReturnTrue" classname="UserRegistrationValidation" time="0.0"/>
+  <testcase name="lastNameValidation_whenFirstLetterNotUpperCase_shouldReturnFalse" classname="UserRegistrationValidation" time="0.0"/>
+  <testcase name="lastNameValidation_whenInputOnlyUpperCase_shouldReturnTrue" classname="UserRegistrationValidation" time="0.001"/>
+  <testcase name="firstNameValidation_whenInputLessThanThree_shouldReturnFalse" classname="UserRegistrationValidation" time="0.0"/>
+  <testcase name="firstNameValidation_whenInputOnlyNumericValue_shouldReturnFalse" classname="UserRegistrationValidation" time="0.0"/>
+  <testcase name="lastNameValidation_whenInputOnlyLowerCase_shouldReturnFalse" classname="UserRegistrationValidation" time="0.001"/>
+  <testcase name="firstNameValidation_whenInputIsCorrect_shouldReturnTrue" classname="UserRegistrationValidation" time="0.0"/>
+  <testcase name="lastNameValidation_whenInputOnlyNumericValue_shouldReturnFalse" classname="UserRegistrationValidation" time="0.0"/>
+  <testcase name="firstNameValidation_whenInputOnlyUpperCase_shouldReturnTrue" classname="UserRegistrationValidation" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
