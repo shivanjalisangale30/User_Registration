@@ -40,6 +40,21 @@ public class UserRegistrationValidator
 
     }
 
+    public static  boolean validateEmailId(String emailId)
+    {
+        Pattern emailIdPattern = Pattern.compile("^[0-9]{2}[ ]{1}[0-9]{10}$");
+
+        Matcher match = emailIdPattern.matcher(emailId);
+
+        if(match.matches())
+            return true;
+        else
+            return false;
+
+    }
+
+
+
 
 
 
