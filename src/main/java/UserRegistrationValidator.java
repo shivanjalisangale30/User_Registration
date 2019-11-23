@@ -27,6 +27,19 @@ public class UserRegistrationValidator
 
     }
 
+    public static  boolean validateMobileNumber(String mobileNumber)
+    {
+        Pattern mobileNumberPattern = Pattern.compile("^[0-9]{2}[ ]{1}[0-9]{10}$");
+
+        Matcher match = mobileNumberPattern.matcher(mobileNumber);
+
+        if(match.matches())
+            return true;
+        else
+            return false;
+
+    }
+
 
 
 

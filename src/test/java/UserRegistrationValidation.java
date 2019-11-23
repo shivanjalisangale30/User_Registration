@@ -96,5 +96,43 @@ public class UserRegistrationValidation
         Assert.assertFalse(result);
     }
 
+    //Validation for Mobile number
+    @Test
+    public void mobileNumberValidation_whenWithProperInput_shouldReturnTrue()
+    {
+        boolean result = userRegistration.validateMobileNumber("91 7896541235");
+        Assert.assertTrue(result);
+    }
+
+    @Test
+    public void  mobileNumberValidation_whenInputWithCountryCode_shouldReturnFalse()
+    {
+        boolean result = userRegistration.validateMobileNumber("9874563215");
+        Assert.assertFalse(result);
+    }
+
+    @Test
+    public void mobileNumberValidation_whenInpputWithLessThanTenDigit_shouldReturnFalse()
+    {
+        boolean result = userRegistration.validateMobileNumber("987456");
+        Assert.assertFalse(result);
+    }
+
+    @Test
+    public void mobileNumberValidation_whenInputWithMoreThanTenDigit_shouldReturnFalse()
+    {
+      boolean result = userRegistration.validateMobileNumber("91 987456321542");
+      Assert.assertFalse(result);
+    }
+
+    @Test
+    public void mobileNuberValidation_whenInputConatinCharacter_shouldReturnFalse()
+    {
+        boolean result = userRegistration.validateMobileNumber("9874563215s");
+        Assert.assertFalse(result);
+    }
+
+
+
 
 }
